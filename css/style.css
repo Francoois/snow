@@ -1,0 +1,86 @@
+@font-face {
+    font-family: lora;
+    src: url(../fonts/Lora/Lora-Regular.ttf);
+}
+@font-face {
+    font-family: lora-bold;
+    src: url(../fonts/Lora/Lora-Bold.ttf);
+}
+@font-face {
+    font-family: lora-italic;
+    src: url(../fonts/Lora/Lora-Italic.ttf);
+}
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+body{
+  background-color: #f6f6f6;
+}
+
+.fix-top{
+  color: #939393;
+}
+
+/* Elements de la navbar */
+.navbar-dark .navbar-nav .nav-link {
+  color: #939393;
+}
+
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link{
+  color: #939393;
+}
+
+.banner{
+  width:100%;/*
+  height: auto;*/
+  /* -webkit-filter: grayscale(100%); Safari 6.0 - 9.0
+  filter: grayscale(100%); */
+}
+
+.crop{
+  height:100%;
+  width:100%;
+  overflow: hidden;
+}
+
+.crop img{
+  width:100%;
+  margin-top: -100px;
+  margin-bottom: -100px;
+}
+
+/* Pas de bords autour du container principal */
+.main{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.stat-banner ul{
+  list-style:none;
+  font-family: roboto;
+  font-size:0.5em;
+}
+
+.stat-banner ul li div img {
+  width:38px;
+  height:34px;
+}
+/*
+.stat-banner ul li svg{
+  width:38mm;
+  height:34mm;
+}*/
+/*
+.stat-banner li::before{
+  content:'A';
+  display:inline-block;
+  height:1em;
+  width:1em;
+  background-image:url('../images/icon1.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  /*padding-left:2em;*//*
+  fill:white;
+} */
