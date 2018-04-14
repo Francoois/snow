@@ -11,7 +11,7 @@
   -->
   <link rel="stylesheet" href="css/bootstrap.min.css"/>
   <link rel="stylesheet" href="css/style.css"/>
-  <!-- Pour un projet boottrap on ne mettra pas en local -->
+  <!-- Pour un projet bootstrap on ne mettra pas en local -->
 </head>
 
 <body>
@@ -19,7 +19,7 @@
   <nav class="nav navbar-expand-sm fixed-top bg-white">
     <div id="nav-contenu" class="row container-fluid">
         <a class="col navbar-brand" href="#">
-            <img src="images/logo.jpg" alt="Logo Snow">
+            <img src="images/logo.svg" alt="Snow Logo">
         </a>
         <ul class="col nav justify-content-end">
             <li class="nav-item">
@@ -46,69 +46,77 @@
 
 <!-- http://presentation.creative-tim.com/ -->
 <div class="wrapper">
-  <div class="section section-header">
+
+  <section class="text-center" id="banner">
     <!-- https://www.w3schools.com/css/css3_images.asp -->
-    <div class="parallax patern-image text-center" style="position:relative; height:578px;">
 
-      <div class="crop">
-        <img src="images/banner.jpg" style="" class="img-fluid banner">
+      <div class="text-banniere">
+        <h3>NEW BRANDING AGENCY</h3>
+        <h1>We are about to change the way</h1>
+        <h2>you publish on web</h2>
+        <svg width="12.995mm" height="13.571mm" version="1.1" viewBox="0 0 12.995 13.571" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+          <metadata>
+            <rdf:RDF>
+              <cc:Work rdf:about="">
+                <dc:format>image/svg+xml</dc:format>
+                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                <dc:title/>
+              </cc:Work>
+            </rdf:RDF>
+          </metadata>
+          <g transform="translate(-.093392 -283.36)">
+            <path d="m6.5907 283.36a6.4973 6.7856 0 0 0-6.4973 6.7856 6.4973 6.7856 0 0 0 6.4973 6.7856 6.4973 6.7856 0 0 0 6.4973-6.7856 6.4973 6.7856 0 0 0-6.4973-6.7856zm0 .43976a6.0764 6.3459 0 0 1 6.0766 6.3459 6.0764 6.3459 0 0 1-6.0766 6.3459 6.0764 6.3459 0 0 1-6.0766-6.3459 6.0764 6.3459 0 0 1 6.0766-6.3459zm-1.2495 5.4333-.28835.28784 1.5379 1.5379.28784-.28784 1.2495-1.25-.28784-.28784-1.2495 1.2501z" opacity=".971"/>
+          </g>
+        </svg>
       </div>
+  </section>
 
-      <div class="banner-text text-center" style="position:absolute; top:50%; left:50%; color:white; transform:translate(-50%,-50%)">
-        <h3 style="font-family:roboto; font-size:8px">NEW BRANDING AGENCY</h3>
-        <h1 style="font-family:lora-bold">We are about to change the way</h1>
-        <h2 style="font-family:lora-italic">you publish on web</h2>
-        <!-- #TODO: fleche -->
-      </div>
-    </div>
-  </div>
-
-  <div class="about text-center">
+  <section class="about text-center">
     <h2 style="font-family:lora-bold">About Our Agency</h2>
     <p>We are a new design studio based in USA. We have over 20 years of combined experience, and know
        a thing or two about websites and mobile apps. Clever use of technology
        and lean processes enable us to work faster and smarter</p>
-  </div>
+  </section>
 
 <!--
       https://blog.spoongraphics.co.uk/tutorials/create-contour-map-effect-illustrator
       http://tutorials.jenkov.com/svg/svg-viewport-view-box.html
       http://tavmjong.free.fr/INKSCAPE/MANUAL/html/Web-Inkscape.html -->
-  <div class="stat-banner" style="background-color:black; color:white; fill:white">
+  <section class="stat-banner" style="background-color:black; color:white; fill:white">
     <ul class="row">
 
       <li class="col-sm row">
         <div class="col">
-          <img src="images/icon1.png" alt="case-icon">
+          <img src="images/icon1.svg" alt="case-icon">
         </div>
         <div class="col"><h5>548</h5><p>PROJECTS COMPLETED</p></div>
       </li>
 
       <li class="col-sm row">
         <div class="col">
-          <img src="images/icon2.png" alt="clock-icon">
+          <img src="images/icon2.svg" alt="clock-icon">
         </div>
         <div class="col"><h5>1465</h5><p>WORKING HOURS</p></div>
       </li>
 
       <li class="col-sm row">
         <div class="col">
-          <img src="images/icon3.png" alt="star-icon">
+          <img src="images/icon3.svg" alt="star-icon">
         </div>
         <div class="col"><h5>612</h5><p>POSITIVE FEEDBACKS</p></div>
       </li>
 
       <li class="col-sm row">
         <div class="col">
-          <img src="images/icon4.png" alt="heart-icon">
+          <img src="images/icon4.svg" alt="heart-icon">
         </div>
         <div class="col"><h5>735</h5><p>HAPPY CLIENTS</p></div>
       </li>
     </ul>
-  </div>
+  </section>
 
   <!-- https://www.w3schools.com/css/css3_images.asp -->
-  <div class="projects text-center">
+  <section class="projects text-center">
     <h2>Best Projects</h2>
     <p>Donec orci sem, pretium ac dolor et, faucibus mauris. Etiam, pellentesque faucibus.
       Vestibus gravida volupat ipsum non ultrices.</p>
@@ -132,16 +140,16 @@
 
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="quote text-center" style="background-color:black; color:white">
+  <section class="quote text-center" style="background-color:black; color:white">
     <p><em>"</em>Outstanding job and exceeded all expectations. It was a pleasure
       to work with them on a sizeable first project and am looking
       forward to start the next one asap.<em>"</em></p>
       <h6 id=author>MICHAEL HOPKINS</h6>
-  </div>
+  </section>
 
-  <div class="blog-spot">
+  <section class="blog-spot">
     <h2 class="text-center">Latest Blog</h2>
     <p class="text-center">Donec orci sem, pretium ac dolor et, faucibus mauris. Etiam, pellentesque faucibus.
       Vestibus gravida volupat ipsum non ultrices.</p>
@@ -159,11 +167,11 @@
           <p class="date">JUNE 01, 2016</p>
           <p>Mauris sed odio tincidunt, volutpat augue, commodo dui. Phasellus hendrerit condintum vehicula</p></li>
       </ul>
-    </div>
+    </section>
 
     <!-- ligne -->
 
-    <div class="contact row">
+    <section class="contact row">
       <div class="col-sm">
         <h2>Contact Info</h2>
         <p>Praesent interdum congue mauris, et fringilla lacus pel
@@ -189,7 +197,7 @@
           <input type="submit" value="SEND MESSAGE" class="row">
         </form>
       </div>
-    </div>
+    </section>
 </div>
 <footer style="background-color:black; color:white">
   <div class="row">

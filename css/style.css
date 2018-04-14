@@ -1,83 +1,62 @@
-@font-face {
-    font-family: lora;
-    src: url(../fonts/Lora/Lora-Regular.ttf);
-}
-@font-face {
-    font-family: lora-bold;
-    src: url(../fonts/Lora/Lora-Bold.ttf);
-}
-@font-face {
-    font-family: lora-italic;
-    src: url(../fonts/Lora/Lora-Italic.ttf);
-}
-@font-face {
-    font-family: roboto;
-    src: url(../fonts/Roboto/Roboto-Regular.ttf);
-}
+/*<<<<<<<<< Icomoon */
+@import url("../icomoon/style.css");
+/*>>>>>>>> Icomoon */
+@import url("fonts.css");
+@import "navbar.css";
+
+/* *{outline: 1px solid red;} */
 
 body{
   background-color: #f6f6f6;
 }
 
-/*
-.navbar-brand::before{
-  content: ' ';
-  position: relative; Pour pouvoir le positionner par rapport à son parent
-  margin: 1em;
-} */
-
-.navbar-brand{
-  margin-left: 3em;
+/*Empêche le décallage de la page */
+.row{
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
-nav ul li a {
-  color: #939393;
-  font-family: roboto;
-  font-weight: bold;
-  font-size: 0.8em;
-}
-nav {
-  /*height: 15%; FIXME */
-  height: 5em; /* Taille en em sinon l'inspecteur change la taille d'affichage*/
-}
-
-#nav-contenu{
-  align-items: center;
-}
-
-/* Elements de la navbar */
-/*.navbar-nav .nav-link {
-  color: #939393;
+/*<<<<<< BANNER */
+/*https://css-tricks.com/tinted-images-multiple-backgrounds/ https://css-tricks.com/forums/topic/css-background-image-color-overlay/*/
+#banner{
+    margin-top: 5em;
+    height: 495px;
+    position:relative; /*height:495px;*/
+    width:100%;
+    background:
+        linear-gradient(
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+        ),
+            url("../images/banner.jpg") center no-repeat;
+    background-size: cover;
 }
 
-.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link{
-  color: #939393;
-}*/
-
-.banner{
-  width:100%;/*
-  height: auto;*/
-  /* -webkit-filter: grayscale(100%); Safari 6.0 - 9.0
-  filter: grayscale(100%); */
+.text-banniere{
+  position:absolute;
+  top:50%;
+  left:50%;
+  color:white;
+  transform:translate(-50%,-50%);
 }
-
-.crop{
-  height:100%;
-  width:100%;
-  overflow: hidden;
+.text-banniere > h3{
+  font-family:roboto;
+  font-size:8px;
 }
-
-.crop img{
-  width:100%;
-  margin-top: -100px;
-  margin-bottom: -100px;
+.text-banniere > h1{
+  font-family:lora-bold;
 }
-
-/* Pas de bords autour du container principal */
-.main{
-  padding-left: 0px;
-  padding-right: 0px;
+.text-banniere > h2{
+  font-family:lora-italic;
 }
+.text-banniere svg{
+    fill: currentColor;
+    padding: 0.5em;
+    margin-top: 5em;
+}
+/* https://codepen.io/nxworld/pen/OyRrGy */
+/*>>>>>> BANNER*/
+
 
 .stat-banner ul{
   list-style:none;
@@ -89,20 +68,3 @@ nav {
   width:38px;
   height:34px;
 }
-/*
-.stat-banner ul li svg{
-  width:38mm;
-  height:34mm;
-}*/
-/*
-.stat-banner li::before{
-  content:'A';
-  display:inline-block;
-  height:1em;
-  width:1em;
-  background-image:url('../images/icon1.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  /*padding-left:2em;*//*
-  fill:white;
-} */

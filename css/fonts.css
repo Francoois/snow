@@ -1,0 +1,16 @@
+@font-face {
+    font-family: lora;
+    src: url(../fonts/Lora/Lora-Regular.ttf);
+}
+@font-face {
+    font-family: lora-bold;
+    src: url(../fonts/Lora/Lora-Bold.ttf);
+}
+@font-face {
+    font-family: lora-italic;
+    src: url(../fonts/Lora/Lora-Italic.ttf);
+}
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
