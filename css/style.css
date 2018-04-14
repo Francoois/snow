@@ -4,7 +4,7 @@
 @import url("fonts.css");
 @import "navbar.css";
 
-/* *{outline: 1px solid red;} */
+/**{outline: 1px solid red;}*/
 
 body{
   background-color: #f6f6f6;
@@ -65,16 +65,33 @@ body{
 /*>>>>>> A Propos */
 
 /*<<<<<< STATS */
-
+.stat-banner{
+    background-color:black;
+    color:white;
+    fill:white;
+}
 .stat-banner ul{
   list-style:none;
   font-family: roboto;
   font-size:0.5em;
 }
 
-.stat-banner ul li div img {
-  width:38px;
-  height:34px;
+.stat-banner>.row {
+    padding: 5%;
+}
+.stat-banner li{
+    display: flex;
+}
+
+.stat-banner svg{
+    position: relative;
+    top: 20%;
+}
+.stat-banner li>.col{
+    position: relative;
+    top: 20%;
+    left : 10%;
+    padding-left: 0;
 }
 
 /*>>>>>> STATS */
