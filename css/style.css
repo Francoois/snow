@@ -57,6 +57,14 @@ body{
 /* https://codepen.io/nxworld/pen/OyRrGy */
 /*>>>>>> BANNER*/
 
+/*<<<<<< A Propos */
+.about{
+    padding: 5% 20%;
+}
+.about p{ margin-top: 1em;}
+/*>>>>>> A Propos */
+
+/*<<<<<< STATS */
 
 .stat-banner ul{
   list-style:none;
@@ -68,3 +76,5 @@ body{
   width:38px;
   height:34px;
 }
+
+/*>>>>>> STATS */
