@@ -61,6 +61,9 @@ body{
 .about{
     padding: 5% 20%;
 }
+.about h2{
+    font-family: lora-bold,arial,serif;
+}
 .about p{ margin-top: 1em;}
 /*>>>>>> A Propos */
 
@@ -117,10 +120,25 @@ body{
 /*<<<<<< CONTACTS */
 
 .contact{
-    border-top : 2px solid #888888;
-    /*background-color: #a5a6a7;*/
+    border-top : 1px solid #888888;
+    padding: 6% 5%;
+}
+.contact h2{
+    font-family: lora-bold;
+    font-size: 2em;
+    margin-bottom: 0.75em;
+}
+.contact form *{
+    border : none;
+    border-radius: 1px;
+}
+.contact form{
+    align-content: space-between;
 }
 
+.contact form *::placeholder{
+    font-size: 0.8em;
+}
 /*>>>>>> */
 
 
