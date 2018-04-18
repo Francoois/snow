@@ -4,7 +4,7 @@
 @import url("fonts.css");
 @import "navbar.css";
 
-/**{outline: 1px solid red;}*/
+*{outline: 1px solid red;}
 
 body{
   background-color: #f6f6f6;
@@ -117,6 +117,23 @@ body{
 
 /*>>>>>> PROJETS */
 
+/*<<<<<< BLOG */
+.blog-spot h2{
+    font-family: lora-bold;
+    padding-top: 1.25em;
+    padding-bottom: 0.75em;
+    font-size: 2.5em;
+}
+.blog-spot h2+p{
+    margin-bottom: 2.5em;
+    color : #5a6268;
+    font-size: 1.1em;
+}
+.blog-spot ul{
+    list-style: none;
+}
+/*>>>>>> BLOG */
+
 /*<<<<<< CONTACTS */
 
 .contact{
@@ -135,9 +152,21 @@ body{
 .contact form{
     align-content: space-between;
 }
-
 .contact form *::placeholder{
     font-size: 0.8em;
+}
+.contact form .row .col{
+display: flex;
+}
+form textarea{
+    height: 12em;
+}
+.submit {
+    font-family: Roboto;
+    color: white;
+    background-color: black;
+    padding: 1em 2em;
+    margin-top: 3em;
 }
 /*>>>>>> */
 
