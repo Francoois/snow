@@ -117,12 +117,45 @@ body{
 
 /*>>>>>> PROJETS */
 
+/*<<<<<< QUOTE */
+.quote{
+    padding: 5% 25%;
+    background-color:black;
+    color:white;
+}
+
+.quote .guillemets{
+    font-family: lora-italic;
+    font-size: 2.5em;
+}
+.quote>p{
+    font-family: lora-italic;
+    font-size: 2em;
+}
+#author{
+    font-family: Roboto;
+}
+/*>>>>>> QUOTE */
+
 /*<<<<<< BLOG */
+.blog-spot{
+    width : 85%;
+    margin-left: 7.5%;
+}
+
 .blog-spot h2{
     font-family: lora-bold;
     padding-top: 1.25em;
     padding-bottom: 0.75em;
     font-size: 2.5em;
+}
+.blog-spot h3{
+    font-family: lora-bold;
+    font-size: 1.75em;
+    color : black;
+}
+.blog-spot small{
+    font-family: roboto;
 }
 .blog-spot h2+p{
     margin-bottom: 2.5em;
@@ -131,6 +164,18 @@ body{
 }
 .blog-spot ul{
     list-style: none;
+}
+.blog-spot .card-deck{
+    padding-bottom: 5em;
+}
+.blog-spot .card{
+    width : 100px;
+}
+.blog-spot .card-deck img{
+    height: 300px;
+}
+.blog-spot .card p{
+    color : #6c757d;
 }
 /*>>>>>> BLOG */
 
